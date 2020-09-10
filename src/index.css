@@ -11,6 +11,7 @@ body {
     color: #777777;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 30px; /* this should not be in pixels*/
 }
 
 code {
