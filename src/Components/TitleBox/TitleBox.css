@@ -1,3 +1,10 @@
+/**
+* Title Box:
+* the title box has a main and sub heading as one h1, for better SEO
+* the main and sub heading animate in from the left and right with a bit of bounce at the end
+* the title box also may contain a button that has it's own animations
+*/
+
 .title-box {
     position: absolute;
     top: 40%;
