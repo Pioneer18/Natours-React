@@ -1,15 +1,11 @@
-@keyframes moveInBottom {
-    0% {
-       opacity: 0;
-       transform: translateY(30px);
-    }
-
-
-    100% {
-       opacity: 1;
-       transform: translateY(0px)
-    }
-}
+/**
+* Button:
+* the link and visited state of the button look the same
+* on hover, the button rises up with a shadow
+* on click it will transition down a bit then pop back up for the hover
+* the button has a pseudo after that scales out and vanishes on hover
+* the button also rises into view with a delayed animation on page load
+*/
 
 /* btn as an unclicked link and as a visited link*/
 .btn:link,
@@ -64,4 +60,17 @@
 .btn-animated {
    animation: moveInBottom .5s ease-out .75s;
    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+       opacity: 0;
+       transform: translateY(30px);
+    }
+
+
+    100% {
+       opacity: 1;
+       transform: translateY(0px)
+    }
 }
