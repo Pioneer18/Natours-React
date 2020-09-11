@@ -100,6 +100,19 @@
      }
  }
 
+ @keyframes moveInBottom {
+     0% {
+        opacity: 0;
+        transform: translateY(30px);
+     }
+
+
+     100% {
+        opacity: 1;
+        transform: translateY(0px)
+     }
+ }
+
  .btn:link,
  .btn:visited {
     text-transform: uppercase;
@@ -108,10 +121,12 @@
     display: inline-block;
     border-radius: 100px;
     transition: all .2s;
+    position: relative;
  }
 
  .btn:hover {
      transform: translateY(-3px); /* move up 3 pixels on the hover*/
+     box-shadow: 0 5px 10px rgba(0,0,0,.2);
  }
 
  .btn:active {
@@ -121,4 +136,33 @@
  .btn-white {
      background-color: #fff;
      color: #777;
+ }
+
+  /* The psuedo element is basically treated like a child of the parent element*/
+ .btn::after {
+     content: ""; /* must be specified even if empty */
+     display: inline-block;
+     height: 100%; /* matches the parent height */
+     width: 100%; /* matches the parent width */
+     border-radius: 100px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     transition: all .4s;
+ }
+
+ .btn-white::after {
+     background-color: #fff;
+ }
+
+ .btn:hover::after {
+     transform: scaleX(1.4) scaleY(1.6);
+     opacity: 0;
+ }
+
+ /* animation-name duration timing-function delay */ 
+ .btn-animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
  }

@@ -9,7 +9,6 @@ const Header = props => (
             <div className="logo-box">
                 <img src={logo} alt="Logo" className="logo"></img>
             </div>
-            <div className="fake-box"></div>
 
             <div className="text-box">
                 <h1 className="heading-primary">
@@ -17,7 +16,8 @@ const Header = props => (
                     <span className="heading-primary-sub">is where life happens</span>
                 </h1>
 
-                <a href="#" className="btn btn-white">Discover our tours</a>
+                {/* This a tag is inlin-block and position relative: for it's child pseudo element */}
+                <a href="#" className="btn btn-white btn-animated">Discover our tours</a>
             </div>
 
         </header>
