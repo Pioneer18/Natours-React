@@ -12,20 +12,21 @@
 .btn:visited {
    text-transform: uppercase;
    text-decoration: none;
-   padding: 15px 40px;
+   padding: 1.5rem 4rem;
    display: inline-block;
-   border-radius: 100px;
+   border-radius: 10rem;
    transition: all .2s;
    position: relative;
+   font-size: 1.5rem;
 }
 
 .btn:hover {
-    transform: translateY(-3px); /* move up 3 pixels on the hover*/
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    transform: translateY(-.3rem); /* move up 3 pixels on the hover*/
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 }
 
 .btn:active {
-    transform: translateY(-1px); /* make the button go down a bit on a click (active)*/
+    transform: translateY(-.1rem); /* make the button go down a bit on a click (active)*/
 }
 
 .btn-white {
@@ -65,12 +66,12 @@
 @keyframes moveInBottom {
     0% {
        opacity: 0;
-       transform: translateY(30px);
+       transform: translateY(3rem);
     }
 
 
     100% {
        opacity: 1;
-       transform: translateY(0px)
+       transform: translateY(0rem)
     }
 }

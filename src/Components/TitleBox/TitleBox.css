@@ -19,14 +19,14 @@
 
     /* This is to prevent against shaky animations*/
     backface-visibility: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
  }
 
  .heading-primary-main {
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
 
     animation-name: moveInLeft;
     animation-duration: 1.5s;
@@ -40,9 +40,9 @@
 
  .heading-primary-sub {
     display: block;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 700;
-    letter-spacing: 19.5px;
+    letter-spacing: 1.95rem;
 
     animation: moveInRight 1.5s ease-out;
  }
@@ -50,31 +50,31 @@
  @keyframes moveInLeft {
     0% {
        opacity: 0;
-       transform: translateX(-100px);
+       transform: translateX(-10rem);
     }
 
     65% {
-       transform: translateX(10px)
+       transform: translateX(1rem)
     }
 
     100% {
        opacity: 1;
-       transform: translateX(0px)
+       transform: translateX(0rem)
     }
 }
 
 @keyframes moveInRight {
     0% {
        opacity: 0;
-       transform: translateX(100px);
+       transform: translateX(10rem);
     }
 
     65% {
-       transform: translateX(-10px)
+       transform: translateX(-1rem)
     }
 
     100% {
        opacity: 1;
-       transform: translateX(0px)
+       transform: translateX(0rem)
     }
 }

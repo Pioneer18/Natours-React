@@ -5,10 +5,10 @@
 
 .logo-box {
     position: absolute; /* relative to the header*/
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
 .logo {
-    height: 35px; /* the width will be auto figured out*/
+    height: 3.5rem; /* the width will be auto figured out*/
 }
