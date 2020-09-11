@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:wght@400;700&display=swap');
 
+/* body element contains the entire webpage*/
 body {
   margin: 0;
+  padding: 30px;
   font-family: -apple-system, BlinkMacSystemFont, 'Lato', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
