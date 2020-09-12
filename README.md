@@ -19,3 +19,8 @@ components from this project are stored on bit.dev
 - makes sure the component is all-inclusive and contains all the parts that are required in order to share it with others
 - before building, the component in your project may be consuming dependencies that it needs to work
 - 'building' the component will add the necessary dependencies to the component, so it'll work in any environment
+
+# export component
+- tag the component: bit tag --all 0.0.1
+- tagging the component stages it for export
+- bit export <username>.<collection>; e.g. bit export Pioneer18.AnimatedComponents
