@@ -5,8 +5,8 @@ import './Logo.css'
 const Logo = props => (
     <React.Fragment>
         {/*  An image should have a block level container, which can be more easily placed where it needs to be */}
-        <div className="logo-box">
-            <img src={logo} alt="Logo" className="logo"></img>
+        <div className="header__logo-box">
+            <img src={logo} alt="Logo" className="header__logo"></img>
         </div>
     </React.Fragment>
 );

@@ -5,7 +5,7 @@
 * the title box also may contain a button that has it's own animations
 */
 
-.title-box {
+.header__title-box {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -22,7 +22,7 @@
     margin-bottom: 6rem;
  }
 
- .heading-primary-main {
+ .heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
@@ -38,7 +38,7 @@
     */
  }
 
- .heading-primary-sub {
+ .heading-primary--sub {
     display: block;
     font-size: 1.5rem;
     font-weight: 700;
