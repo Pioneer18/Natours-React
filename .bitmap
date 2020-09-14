@@ -24,5 +24,28 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "pioneer18.animatedcomponents/title-box@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/Components/TitleBox/TitleBox.css",
+                "test": false,
+                "name": "TitleBox.css"
+            },
+            {
+                "relativePath": "src/Components/TitleBox/TitleBox.js",
+                "test": false,
+                "name": "TitleBox.js"
+            },
+            {
+                "relativePath": "src/Components/TitleBox/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/Components/TitleBox/index.js",
+        "trackDir": "src/Components/TitleBox",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "version": "14.8.8"
 }

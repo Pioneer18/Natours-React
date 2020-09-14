@@ -1,0 +1,80 @@
+/**
+* Title Box:
+* the title box has a main and sub heading as one h1, for better SEO
+* the main and sub heading animate in from the left and right with a bit of bounce at the end
+* the title box also may contain a button that has it's own animations
+*/
+
+.title-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* translate the center of the object to it's 'position'*/
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+
+    /* This is to prevent against shaky animations*/
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+ }
+
+ .heading-primary-main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out; /* the animation will start fast and then slow down*/
+    
+    /*
+    animation-iteration-count: 3;
+    animation-delay: 3s;
+    */
+ }
+
+ .heading-primary-sub {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.95rem;
+
+    animation: moveInRight 1.5s ease-out;
+ }
+
+ @keyframes moveInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-10rem);
+    }
+
+    65% {
+       transform: translateX(1rem)
+    }
+
+    100% {
+       opacity: 1;
+       transform: translateX(0rem)
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(10rem);
+    }
+
+    65% {
+       transform: translateX(-1rem)
+    }
+
+    100% {
+       opacity: 1;
+       transform: translateX(0rem)
+    }
+}
