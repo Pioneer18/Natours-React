@@ -1,3 +1,7 @@
+/**
+* * This document, index.scss, imports the .scss files from all of the components in this application
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:wght@400;700&display=swap');
 
 $color-primary: #55c57e;
@@ -5,7 +9,9 @@ $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
 
-/* universal reset for all the elements as well as after and before pseudo elements */
+/*
+ * universal reset for all the elements as well as after and before pseudo elements 
+ */
 *,
 *::after,
 *::before {
@@ -22,7 +28,7 @@ html {
   font-size: 62.5%;
 }
 
-/* body element contains the entire webpage*/
+/* body element contains the entire webpage */
 body {
   margin: 0;
   padding: 3rem;
