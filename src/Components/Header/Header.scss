@@ -4,7 +4,8 @@
 * has a background image as well as a linear gradient cover
 * the background is clipped into a polygon shape with clip-path
 */
-@import '../../sass/index.scss';
+@import '../../sass/variables';
+
 
 .header {
     height: 95vh;
