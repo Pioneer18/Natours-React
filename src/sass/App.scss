@@ -13,10 +13,10 @@
 @import './base/utilities';
 
 // Components
-@import './Components/Logo/logo.scss';
-@import './Components/Button/button.scss';
-@import './Components/Header/header.scss';
-@import './Components/TitleBox/titleBox.scss';
+@import './Components/logo';
+@import './Components/button';
+@import './Components/header';
+@import './Components/titleBox';
 
 //pages
 @import './pages/home';

@@ -4,7 +4,7 @@
 * has a background image as well as a linear gradient cover
 * the background is clipped into a polygon shape with clip-path
 */
-@import '../../abstract/variables';
+@import '../abstract/variables';
 
 
 .header {
@@ -13,7 +13,7 @@
         to right bottom, 
         rgba($color-primary-light, 0.8), 
         rgba($color-primary-dark, 0.8)),
-        url('../../../Images/hero.jpg');
+        url('../../Images/hero.jpg');
     background-size: cover; /* will always try to fit the viewport or element selected to cover*/
     background-position: top;
 

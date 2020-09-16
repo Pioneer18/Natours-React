@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../Images/logo-white.png'
-import '../../sass/Components/Logo/_logo.scss'
+import '../../sass/Components/_logo.scss'
 
 const Logo = props => (
     <React.Fragment>
