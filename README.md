@@ -1,4 +1,4 @@
-### Bit.dev 
+### Reusable Components 
 components from this project are stored in my repo Pioneer18/Components
 
 ## Purpose:
