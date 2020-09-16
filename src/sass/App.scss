@@ -1,44 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:wght@400;700&display=swap');
-@import '../Components/Button/Button.scss';
-
-/*
- * universal reset for all the elements as well as after and before pseudo elements 
- */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; /* box-sizing properties may now be inherited */
-}
-
-/*
- * set the root font-size to 62% of the default 16px to get 10px 
- * use percentage because it enables the user to still adjust the font-size in the browser 
-*/
-html {
-  font-size: 62.5%;
-}
-
-/* body element contains the entire webpage */
-body {
-  margin: 0;
-  padding: 3rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Lato', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    font-weight: 400;
-    /* font-size: 16px; */
-    line-height: 1.7;
-    color: #777777;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 3rem; /* this should not be in pixels*/
-  /* width and height will account for any border or padding; makes dealing with sizing much simpler*/
-  box-sizing: border-box;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import './elements.scss';
+@import './Components/Logo/logo.scss';
+@import './Components/Button/button.scss';
+@import './Components/Header/header.scss';
+@import './Components/TitleBox/titleBox.scss';

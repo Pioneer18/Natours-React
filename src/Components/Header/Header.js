@@ -1,5 +1,5 @@
 import React from 'react'
-import './Header.scss'
+import '../../sass/Components/Header/_header.scss'
 import Logo from '../Logo';
 import TitleBox from '../TitleBox';
 

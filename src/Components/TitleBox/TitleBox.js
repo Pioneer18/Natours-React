@@ -1,5 +1,5 @@
 import React from 'react';
-import './TitleBox.scss';
+import '../../sass/Components/TitleBox/_titleBox.scss';
 import Button from '../Button';
 
 const TitleBox = props => (
