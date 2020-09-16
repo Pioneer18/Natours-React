@@ -27,6 +27,11 @@
     &:hover {
         transform: translateY(-.3rem); // move up 3 pixels on the hover
         box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+        
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
     }
 
     &:active {
@@ -56,10 +61,6 @@
         background-color: $button-white;
     }
     
-    &:hover::after {
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0;
-    }
     
     /* animation-name duration timing-function delay */ 
     &--animated {
