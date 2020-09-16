@@ -1,0 +1,9 @@
+// append a pseudo element to the element, which will clear the floated child elements
+@mixin clearfix {
+     &::after {
+         // always specify the content property, or the pseudo element won't render to the page
+         content: "";
+         display: table;
+         clear: both; // float left and float right
+     }
+}
