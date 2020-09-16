@@ -5,8 +5,8 @@
    * the title box also may contain a button that has it's own animations
 */
 
-@import '../../variables';
-@import '../../keyframes';
+@import '../../base/variables';
+@import '../../base/keyframes';
 
 .header__title-box {
    position: absolute;
