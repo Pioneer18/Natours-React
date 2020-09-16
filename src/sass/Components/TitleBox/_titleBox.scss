@@ -5,6 +5,9 @@
 * the title box also may contain a button that has it's own animations
 */
 
+@import '../../variables';
+@import '../../keyframes';
+
 .header__title-box {
     position: absolute;
     top: 40%;
@@ -14,7 +17,7 @@
 }
 
 .heading-primary {
-    color: #fff;
+    color: $heading-primary;
     text-transform: uppercase;
 
     /* This is to prevent against shaky animations*/
@@ -46,35 +49,3 @@
 
     animation: moveInRight 1.5s ease-out;
  }
-
- @keyframes moveInLeft {
-    0% {
-       opacity: 0;
-       transform: translateX(-10rem);
-    }
-
-    65% {
-       transform: translateX(1rem)
-    }
-
-    100% {
-       opacity: 1;
-       transform: translateX(0rem)
-    }
-}
-
-@keyframes moveInRight {
-    0% {
-       opacity: 0;
-       transform: translateX(10rem);
-    }
-
-    65% {
-       transform: translateX(-1rem)
-    }
-
-    100% {
-       opacity: 1;
-       transform: translateX(0rem)
-    }
-}
