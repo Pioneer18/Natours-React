@@ -25,7 +25,7 @@
 
 .btn:hover {
     transform: translateY(-.3rem); /* move up 3 pixels on the hover*/
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba($color-black,.2);
 }
 
 .btn:active {
