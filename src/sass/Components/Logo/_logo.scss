@@ -3,12 +3,12 @@
 * the logo is in the top left corner of the page
 */
 
-.header__logo-box {
-    position: absolute; /* relative to the header*/
-    top: 4rem;
-    left: 4rem;
-}
-
 .header__logo {
     height: 3.5rem; /* the width will be auto figured out*/
+
+    &-box {
+        position: absolute; /* relative to the header*/
+        top: 4rem;
+        left: 4rem;
+    }
 }
