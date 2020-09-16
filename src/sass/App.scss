@@ -1,6 +1,23 @@
+// Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:wght@400;700&display=swap');
+
+// abstract
+@import './abstract/functions';
+@import './abstract/mixins';
+@import './abstract/variables';
+
+// base
+@import './base/keyframes';
 @import './base/elements.scss';
+@import './base/typography';
+@import './base/utilities';
+
+// Components
 @import './Components/Logo/logo.scss';
 @import './Components/Button/button.scss';
 @import './Components/Header/header.scss';
 @import './Components/TitleBox/titleBox.scss';
+
+//pages
+@import './pages/home';
+
