@@ -10,58 +10,63 @@
 @import '../../variables';
 @import '../../keyframes';
 
-/* btn as an unclicked link and as a visited link*/
-.btn:link,
-.btn:visited {
-   text-transform: uppercase;
-   text-decoration: none;
-   padding: 1.5rem 4rem;
-   display: inline-block;
-   border-radius: 10rem;
-   transition: all .2s;
-   position: relative;
-   font-size: 1.5rem;
+.btn {
+    // btn as an unclicked link and as a visited link
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem); // move up 3 pixels on the hover
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+
+    &:active {
+        transform: translateY(-.1rem); // make the button go down a bit on a click (active)
+    }
+
+    &--white {
+        background-color: $button-white;
+        color: $button-text;
+    }
+
+    // The psuedo element is basically treated like a child of the parent element
+    &::after {
+        content: ""; /* must be specified even if empty */
+        display: inline-block;
+        height: 100%; /* matches the parent height */
+        width: 100%; /* matches the parent width */
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    &--white::after {
+        background-color: $button-white;
+    }
+    
+    &:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+    
+    /* animation-name duration timing-function delay */ 
+    &--animated {
+       animation: moveInBottom .5s ease-out .75s;
+       animation-fill-mode: backwards;
+    }
 }
 
-.btn:hover {
-    transform: translateY(-.3rem); /* move up 3 pixels on the hover*/
-    box-shadow: 0 .5rem 1rem rgba($color-black,.2);
-}
 
-.btn:active {
-    transform: translateY(-.1rem); /* make the button go down a bit on a click (active)*/
-}
 
-.btn--white {
-    background-color: $button-white;
-    color: $button-text;
-}
-
- /* The psuedo element is basically treated like a child of the parent element*/
-.btn::after {
-    content: ""; /* must be specified even if empty */
-    display: inline-block;
-    height: 100%; /* matches the parent height */
-    width: 100%; /* matches the parent width */
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-}
-
-.btn--white::after {
-    background-color: $button-white;
-}
-
-.btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-/* animation-name duration timing-function delay */ 
-.btn--animated {
-   animation: moveInBottom .5s ease-out .75s;
-   animation-fill-mode: backwards;
-}
