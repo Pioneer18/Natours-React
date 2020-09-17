@@ -7,6 +7,7 @@ import '../../sass/layout/_main.scss';
 import SmallButton from './SmallButton/SmallButton';
 import TextColumn1of2 from './TextColumn1of2/TextColumn1of2';
 import Composition from './Composition/Composition';
+import SectionFeatures from './SectionFeatures/SectionFeatures';
 
 const Main = props => (
     < >
@@ -34,6 +35,7 @@ const Main = props => (
                     </div>
                 </div>
             </section>
+            <SectionFeatures></SectionFeatures>
         </main>
     </>
 );
