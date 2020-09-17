@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <Main></Main>
+      <Main headingMargin={'8rem'}></Main>
     </div>
   );
 }

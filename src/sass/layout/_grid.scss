@@ -3,7 +3,6 @@
 
 .row {
     max-width: $grid-width;
-    background-color: #eee;
     margin: 0 auto; // center the row
     
     // apply the margin-bottom to all of the rows except the last
@@ -17,7 +16,6 @@
 
     // 'attribute' to select all classes that start with "col-" (*, $)
     [class^="col-"] {
-        background-color: orangered;
         float: left;
     
         &:not(:last-child) {
