@@ -1,10 +1,14 @@
 import React from 'react';
+import FeatureBox from '../FeatureBox/FeatureBox';
 
 const SectionFeatures = props => (
     <  >
     <section className="section-features">
-        {/** Linea Icon Font: <i /> is for icon font*/}
-        <i className='icon-basic-world'></i>
+        <div className="row">
+            <div className="col-1-of-4">
+                <FeatureBox></FeatureBox>
+            </div>
+        </div>
     </section>
     </ >
 );
