@@ -1,0 +1,52 @@
+@import '../abstract/variables';
+@import '../abstract/mixins';
+
+.row {
+    max-width: $grid-width;
+    background-color: #eee;
+    margin: 0 auto; // center the row
+    
+    // apply the margin-bottom to all of the rows except the last
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+
+    }
+
+    // clearfix to make row retain its hight despite floated columns
+    @include clearfix;
+
+    // 'attribute' to select all classes that start with "col-" (*, $)
+    [class^="col-"] {
+        background-color: orangered;
+        float: left;
+    
+        &:not(:last-child) {
+            margin-right: $horizontal-gutter;
+        }
+    }
+    
+    // a column is always inside of a row
+    .col-1-of-2 {
+        width: calc((100% - #{$horizontal-gutter}) / 2); // responsive width
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$horizontal-gutter}) / 3);
+    }
+    
+    .col-2-of-3 {
+        width: calc(2 * ((100% - 2 * #{$horizontal-gutter}) / 3) + #{$horizontal-gutter});
+    }
+
+    .col-1-of-4 {
+        width: calc((100% - 3 * #{$horizontal-gutter}) / 4);
+    }
+
+    .col-2-of-4 {
+        width: calc((2 * (100% - 3 * #{$horizontal-gutter}) / 4) + #{$horizontal-gutter});
+    }
+
+    .col-3-of-4 {
+        width: calc(3 * ((100% - 3 * #{$horizontal-gutter}) / 4) + 2 * #{$horizontal-gutter});
+    }
+}
