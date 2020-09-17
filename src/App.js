@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './Components/Header';
-import GridTest from './Components/gridTest';
-import './sass/App.scss';
+import Main from './Components/Main';
+import './sass/app.scss';
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <GridTest></GridTest>
+      <Main></Main>
     </div>
   );
 }
