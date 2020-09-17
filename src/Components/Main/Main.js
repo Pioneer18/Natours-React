@@ -6,6 +6,7 @@ import React from 'react';
 import '../../sass/layout/_main.scss';
 import SmallButton from './SmallButton/SmallButton';
 import TextColumn1of2 from './TextColumn1of2/TextColumn1of2';
+import Composition from './Composition/Composition';
 
 const Main = props => (
     < >
@@ -29,7 +30,7 @@ const Main = props => (
                         <SmallButton></SmallButton>
                     </div>
                     <div className="col-1-of-2">
-                        Image composition
+                        <Composition></Composition>    
                     </div>
                 </div>
             </section>
