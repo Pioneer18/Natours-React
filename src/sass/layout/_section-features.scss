@@ -1,0 +1,12 @@
+@import '../abstract/variables';
+
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-primary-light, 0.8), 
+        rgba($color-primary-dark, 0.8)),
+        url('../../Images/nat-4.jpg');
+    background-size: cover; /* will always try to fit the viewport or element selected to cover*/
+    background-position: top;
+}
