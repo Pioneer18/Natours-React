@@ -9,4 +9,13 @@
         url('../../Images/nat-4.jpg');
     background-size: cover; /* will always try to fit the viewport or element selected to cover*/
     background-position: top;
+
+    // clip-path: polygon(0% 25%, 75vw 0%, 100% 0%, 100% 75vh, 0% 100%);
+    transform: skewY(-7deg);
+    margin-top: -15rem;
+
+    // all direct children of this section
+    & > * {
+        transform: skewY(7deg)
+    }
 }
