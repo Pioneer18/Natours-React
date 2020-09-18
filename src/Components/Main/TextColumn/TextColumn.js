@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TextColumn1of2 = props => (
+const TextColumn = props => (
     < >
         <h3 className="heading-tertiary" style={{ marginBottom: '1.5rem' }}>{props.heading1}</h3>
         <p className="paragraph">
@@ -14,4 +14,4 @@ const TextColumn1of2 = props => (
     </ >
 );
 
-export default TextColumn1of2;
+export default TextColumn;
