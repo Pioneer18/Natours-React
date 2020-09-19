@@ -1,7 +1,7 @@
 import React from 'react';
-import imgNat1 from '../../../Images/nat-1-large.jpg';
-import imgNat2 from '../../../Images/nat-2-large.jpg';
-import imgNat3 from '../../../Images/nat-3-large.jpg';
+import imgNat1 from '../../../../Images/nat-1-large.jpg';
+import imgNat2 from '../../../../Images/nat-2-large.jpg';
+import imgNat3 from '../../../../Images/nat-3-large.jpg';
 
 const Composition = props => (
     <  >

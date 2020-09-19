@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../sass/layout/_section-features.scss';
-import FeatureBox from '../FeatureBox/FeatureBox';
+import FeatureBox from './FeatureBox/FeatureBox';
 
 const SectionFeatures = props => (
     <  >

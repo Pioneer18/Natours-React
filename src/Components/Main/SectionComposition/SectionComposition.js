@@ -1,7 +1,7 @@
 import React from 'react';
-import SmallButton from '../SmallButton/SmallButton';
-import TextColumn from '../TextColumn/TextColumn';
-import Composition from '../Composition/Composition';
+import SmallButton from './SmallButton/SmallButton';
+import TextColumn from './TextColumn/TextColumn';
+import Composition from './Composition/Composition';
 
 const SectionComposition = props => (
     < >

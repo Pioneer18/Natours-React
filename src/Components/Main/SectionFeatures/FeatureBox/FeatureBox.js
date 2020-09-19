@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../sass/Components/_feature-box.scss'
+import '../../../../sass/Components/_feature-box.scss'
 
 const FeatureBox = props => (
     <>
