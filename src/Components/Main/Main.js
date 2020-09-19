@@ -3,7 +3,6 @@
  */
 
 import React from 'react';
-import '../../sass/layout/_main.scss';
 import SectionComposition from './SectionComposition/SectionComposition';
 import SectionFeatures from './SectionFeatures/SectionFeatures';
 import SectionTours from './SectionTours/SectionTours';
