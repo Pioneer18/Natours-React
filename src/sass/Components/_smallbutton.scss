@@ -7,7 +7,7 @@
         color: $color-primary;
         display: inline-block;
         text-decoration: none;
-        border-bottom: 2px solid $color-primary;
+        border-bottom: 2px solid $color-primary; // need the border bottom to add padding to the button <a/>
         padding: 3px;
         transition: all .2s;
     }

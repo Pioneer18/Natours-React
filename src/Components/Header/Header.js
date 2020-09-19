@@ -1,3 +1,9 @@
+/**
+ * Large Header holds the Logo and TitleBox
+ * Green linear Gradient cover with nature background image
+ * Animated Headings and button
+ */
+
 import React from 'react'
 import '../../sass/Components/_header.scss'
 import Logo from '../Logo';
