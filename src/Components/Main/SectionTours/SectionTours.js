@@ -8,6 +8,19 @@ const SectionTours = props => (
                     Most Popular Tours
                 </h2>
         </div>
+        <div className="row">
+                <div className="col-1-of-3">
+                    col 1 of 3
+                </div>
+                <div className="col-1-of-3">
+                    col 1 of 3
+                
+                </div>
+                <div className="col-1-of-3">
+                    col 1 of 3
+                
+                </div>
+        </div>
     </ >
 )
 

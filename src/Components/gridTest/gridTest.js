@@ -34,7 +34,7 @@ const gridTest = props => (
                     col 1 of 3
                 </div>
                 <div className="col-2-of-3">
-                    col 1 of 3
+                    col 2 of 3
                 
                 </div>
             </div>
