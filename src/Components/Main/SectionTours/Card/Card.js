@@ -1,16 +1,17 @@
 import React from 'react';
 import classNames from 'classnames';
 
-const Card = props => {
+const Card = props => (
     <div className="card">
+        {/* FRONT */}
         <div className="card__side card__side--front">
             <div className={classNames("card__picture", `card__picture--${props.cardId}`)}> {/* classnames: card_picture--1 */}
-                                &nbsp;
-                            </div>
+                &nbsp;
+            </div>
             <h4 className="card__heading">
                 <span className={classNames("card__heading-span", `card__heading-span--${props.cardId}`)}> {/* classnames: card__heading-span--1 */}
-                                    The Sea Explorer
-                                </span>
+                    {props.cardHeading}
+                </span>
             </h4>
             <div className="card__details">
                 <ul>
@@ -22,6 +23,7 @@ const Card = props => {
                 </ul>
             </div>
         </div>
+        {/* BACK */}
         <div className={classNames('card__side card__side--back', `card__side--back-${props.cardId}`)}> {/* classnames: card__side--back-1 */}
             <div className="card__cta">
                 <div className="card__price-box">
@@ -31,5 +33,6 @@ const Card = props => {
                 <a href="#" className="btn btn--white">Book Now!</a>
             </div>
         </div>
-    </div>
-}
+    </div>);
+
+export default Card;
