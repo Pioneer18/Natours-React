@@ -2,15 +2,15 @@ import React from 'react';
 
 const SectionTours = props => (
     <  >
-     {/** Header */}
-     <section className="section-tours">
-        <div className="u-center-text" style={{ marginBottom: props.headingMargin}}>
+        {/** Header */}
+        <section className="section-tours">
+            <div className="u-center-text" style={{ marginBottom: props.headingMargin }}>
                 <h2 className="heading-secondary">
                     Most Popular Tours
                 </h2>
-        </div>
+            </div>
 
-        <div className="row">
+            <div className="row">
                 <div className="col-1-of-3">
                     <div className="card">
                         <div className="card__side card__side--front">
@@ -38,13 +38,13 @@ const SectionTours = props => (
                                     <p className="card__price-only">Only</p>
                                     <p className="card__price-value">$297</p>
                                 </div>
-                                <a href="#" className="btn btn--white">Book Now</a>
+                                <a href="#" className="btn btn--white">Book Now!</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="col-1-of-3">
-                <div className="card">
+                    <div className="card">
                         <div className="card__side card__side--front">
                             <div className="card__picture card__picture--2">
                                 &nbsp;
@@ -56,11 +56,11 @@ const SectionTours = props => (
                             </h4>
                             <div className="card__details">
                                 <ul>
-                                <li>7 day tours</li>
-                                <li>Up to 40 people</li>
-                                <li>6 tour guides</li>
-                                <li>Sleep in provided tents</li>
-                                <li>Difficulty: medium</li>
+                                    <li>7 day tours</li>
+                                    <li>Up to 40 people</li>
+                                    <li>6 tour guides</li>
+                                    <li>Sleep in provided tents</li>
+                                    <li>Difficulty: medium</li>
                                 </ul>
                             </div>
                         </div>
@@ -68,15 +68,15 @@ const SectionTours = props => (
                             <div className="card__cta">
                                 <div className="card__price-box">
                                     <p className="card__price-only">Only</p>
-                                    <p className="card__price-value">$297</p>
+                                    <p className="card__price-value">$497</p>
                                 </div>
-                                <a href="#" className="btn btn--white">Book Now</a>
+                                <a href="#" className="btn btn--white">Book Now!</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="col-1-of-3">
-                <div className="card">
+                    <div className="card">
                         <div className="card__side card__side--front">
                             <div className="card__picture card__picture--3">
                                 &nbsp;
@@ -88,11 +88,11 @@ const SectionTours = props => (
                             </h4>
                             <div className="card__details">
                                 <ul>
-                                <li>5 day tours</li>
-                                <li>Up to 15 people</li>
-                                <li>3 tour guides</li>
-                                <li>Sleep in provided tents</li>
-                                <li>Difficulty: hard</li>
+                                    <li>5 day tours</li>
+                                    <li>Up to 15 people</li>
+                                    <li>3 tour guides</li>
+                                    <li>Sleep in provided tents</li>
+                                    <li>Difficulty: hard</li>
                                 </ul>
                             </div>
                         </div>
@@ -100,15 +100,21 @@ const SectionTours = props => (
                             <div className="card__cta">
                                 <div className="card__price-box">
                                     <p className="card__price-only">Only</p>
-                                    <p className="card__price-value">$297</p>
+                                    <p className="card__price-value">$897</p>
                                 </div>
-                                <a href="#" className="btn btn--white">Book Now</a>
+                                <a href="#" className="btn btn--white">Book Now!</a>
                             </div>
                         </div>
                     </div>
                 </div>
-        </div>
-     </section>
+            </div>
+            
+            <div className="u-center-text u-margin-top-large">
+                <a href="#" className="btn btn--green">Discover all tours</a>
+            </div>
+
+            
+        </section>
     </ >
 )
 

@@ -44,6 +44,16 @@
         color: $button-text;
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+    
+
     // The psuedo element is basically treated like a child of the parent element
     &::after {
         content: ""; /* must be specified even if empty */
@@ -61,7 +71,6 @@
     &--white::after {
         background-color: $button-white;
     }
-    
     
     /* animation-name duration timing-function delay */ 
     &--animated {
