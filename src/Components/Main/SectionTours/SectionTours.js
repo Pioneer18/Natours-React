@@ -18,9 +18,9 @@ const SectionTours = props => (
                                 &nbsp;
                             </div>
                             <h4 className="card__heading">
-                                <div className="card__heading-span card__heading-span--1">
+                                <span className="card__heading-span card__heading-span--1">
                                     The Sea Explorer
-                                </div>
+                                </span>
                             </h4>
                             <div className="card__details">
                                 Details
@@ -38,9 +38,9 @@ const SectionTours = props => (
                                 &nbsp;
                             </div>
                             <h4 className="card__heading">
-                                <div className="card__heading-span card__heading-span--2">
+                                <span className="card__heading-span card__heading-span--2">
                                     Heading
-                                </div>
+                                </span>
                             </h4>
                             <div className="card__details">
                                 Details
@@ -58,9 +58,9 @@ const SectionTours = props => (
                                 &nbsp;
                             </div>
                             <h4 className="card__heading">
-                                <div className="card__heading-span card__heading-span--3">
+                                <span className="card__heading-span card__heading-span--3">
                                     Heading
-                                </div>
+                                </span>
                             </h4>
                             <div className="card__details">
                                 Details
