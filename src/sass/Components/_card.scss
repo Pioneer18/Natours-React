@@ -66,6 +66,7 @@
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        // this is a manual fix for when the [overflow: hidden] property fails
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
 
