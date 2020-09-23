@@ -1,4 +1,27 @@
 import React from 'react';
+import Card from './Card/Card';
+
+const listOne = {
+    li1: '3 day tours',
+    li2: 'Up to 30 people',
+    li3: '2 tour guides',
+    li4: 'Sleep in cozy hotels',
+    li5: 'Difficulty: easy'
+}
+const listTwo = {
+    li1: '5 day tours',
+    li2: 'Up to 15 people',
+    li3: '3 tour guides',
+    li4: 'Sleep in provided tents',
+    li5: 'Difficulty: hard',
+}
+const listThree = {
+    li1: '7 day tours',
+    li2: 'Up to 40 people',
+    li3: '6 tour guides',
+    li4: 'Sleep in provided tents',
+    li5: 'Difficulty: medium',
+}
 
 const SectionTours = props => (
     <  >
@@ -12,100 +35,29 @@ const SectionTours = props => (
 
             <div className="row">
                 <div className="col-1-of-3">
-                    <div className="card">
-                        <div className="card__side card__side--front">
-                            <div className="card__picture card__picture--1"> {/* classnames: card_picture--1 */}
-                                &nbsp;
-                            </div>
-                            <h4 className="card__heading">
-                                <span className="card__heading-span card__heading-span--1"> {/* classnames: card__heading-span--1 */}
-                                    The Sea Explorer
-                                </span>
-                            </h4>
-                            <div className="card__details">
-                                <ul>
-                                    <li>3 day tours</li>
-                                    <li>Up to 30 people</li>
-                                    <li>2 tour guides</li>
-                                    <li>Sleep in cozy hotels</li>
-                                    <li>Difficulty: easy</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className='card__side card__side--back card__side--back-1'> {/* classnames: card__side--back-1 */}
-                            <div className="card__cta">
-                                <div className="card__price-box">
-                                    <p className="card__price-only">Only</p>
-                                    <p className="card__price-value">$297</p>
-                                </div>
-                                <a href="#" className="btn btn--white">Book Now!</a>
-                            </div>
-                        </div>
-                    </div>
+                    <Card 
+                        cardId={'1'}
+                        cardHeading={'The Sea Explorer'}
+                        list={listOne}
+                        price={'297'}
+                    />
+               
                 </div>
                 <div className="col-1-of-3">
-                    <div className="card">
-                        <div className="card__side card__side--front">
-                            <div className="card__picture card__picture--2"> {/* classnames: card_picture--2 */}
-                                &nbsp;
-                            </div>
-                            <h4 className="card__heading">
-                                <span className="card__heading-span card__heading-span--2"> {/* classnames: card__heading-span--2 */}
-                                    The Forest Hiker
-                                </span>
-                            </h4>
-                            <div className="card__details">
-                                <ul>
-                                    <li>7 day tours</li>
-                                    <li>Up to 40 people</li>
-                                    <li>6 tour guides</li>
-                                    <li>Sleep in provided tents</li>
-                                    <li>Difficulty: medium</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className='card__side card__side--back card__side--back-2'> {/* classnames: card__side--back-2 */}
-                            <div className="card__cta">
-                                <div className="card__price-box">
-                                    <p className="card__price-only">Only</p>
-                                    <p className="card__price-value">$497</p>
-                                </div>
-                                <a href="#" className="btn btn--white">Book Now!</a>
-                            </div>
-                        </div>
-                    </div>
+                    <Card
+                        cardId={'2'}
+                        cardHeading={'The Forest Hiker'}
+                        list={listTwo}
+                        price={'497'}
+                    />
                 </div>
                 <div className="col-1-of-3">
-                    <div className="card">
-                        <div className="card__side card__side--front">
-                            <div className="card__picture card__picture--3"> {/* classnames: card_picture--3 */}
-                                &nbsp;
-                            </div>
-                            <h4 className="card__heading">
-                                <span className="card__heading-span card__heading-span--3">
-                                    The Snow Adventurer
-                                </span>
-                            </h4>
-                            <div className="card__details">
-                                <ul>
-                                    <li>5 day tours</li>
-                                    <li>Up to 15 people</li>
-                                    <li>3 tour guides</li>
-                                    <li>Sleep in provided tents</li>
-                                    <li>Difficulty: hard</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className='card__side card__side--back card__side--back-3'>
-                            <div className="card__cta">
-                                <div className="card__price-box">
-                                    <p className="card__price-only">Only</p>
-                                    <p className="card__price-value">$897</p>
-                                </div>
-                                <a href="#" className="btn btn--white">Book Now!</a>
-                            </div>
-                        </div>
-                    </div>
+                    <Card
+                        cardId={'3'}
+                        cardHeading={'The Snow Adventurer'}
+                        list={listThree}
+                        price={'897'}
+                    />
                 </div>
             </div>
             
