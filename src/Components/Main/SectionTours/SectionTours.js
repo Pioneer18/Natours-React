@@ -51,7 +51,7 @@ const SectionTours = props => (
                             </div>
                             <h4 className="card__heading">
                                 <span className="card__heading-span card__heading-span--2">
-                                    Heading
+                                    The Forest Hiker
                                 </span>
                             </h4>
                             <div className="card__details">
@@ -83,7 +83,7 @@ const SectionTours = props => (
                             </div>
                             <h4 className="card__heading">
                                 <span className="card__heading-span card__heading-span--3">
-                                    Heading
+                                    The Snow Adventurer
                                 </span>
                             </h4>
                             <div className="card__details">
