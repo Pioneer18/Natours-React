@@ -12,7 +12,7 @@ const Main = props => (
         <main>
             <SectionComposition headingMargin={props.headingMargin}></SectionComposition>
             <SectionFeatures></SectionFeatures>
-            <SectionTours></SectionTours>
+            <SectionTours headingMargin={'8rem'}></SectionTours>
         </main>
     </>
 );
