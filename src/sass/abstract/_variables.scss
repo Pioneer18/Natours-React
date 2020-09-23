@@ -10,6 +10,11 @@ $color-secondary-dark: #ff7730;
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
 
+// gradients
+$color-orange-gradient: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+$color-blue-gradient: linear-gradient((to right bottom, $color-tertiary-light, $color-tertiary-dark));
+$color-green-gradient: linear-gradient((to right bottom, $color-primary-light, $color-primary-dark)); 
+
 // shadows
 $light-card-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 

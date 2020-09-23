@@ -20,6 +20,7 @@
         left: 0;
         backface-visibility: hidden;
         border-radius: 3px;
+        overflow: hidden;
         box-shadow: $light-card-shadow; 
         
         &--front {
@@ -31,15 +32,15 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+                background-image: $color-orange-gradient
             }
 
             &-2 {
-                background-image: linear-gradient((to right bottom, $color-primary-light, $color-primary-dark));
+                background-image: $color-green-gradient
             }
 
             &-3 {
-                background-image: linear-gradient((to right bottom, $color-tertiary-light, $color-tertiary-dark))
+                background-image: $color-blue-gradient
             }
         }
 
@@ -59,18 +60,23 @@
 
     // FRONT SIDE STYLING
     &__picture {
-
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
 
         &--1 {
-            background-image: url('../../Images/nat-5.jpg');
+            background-image: $color-orange-gradient,
+            url('../../Images/nat-5.jpg');
         }
 
         &--2 {
-
+            background-image: $color-green-gradient, 
+            url('../../Images/nat-5.jpg');
         }
 
         &--3 {
-
+            background-image: $color-blue-gradient, 
+            url('../../Images/nat-5.jpg');
         }
     }
 }
