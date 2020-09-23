@@ -14,7 +14,7 @@ const SectionTours = props => (
                 <div className="col-1-of-3">
                     <div className="card">
                         <div className="card__side card__side--front">
-                            <div className="card__picture--1">
+                            <div className="card__picture card__picture--1">
                                 &nbsp;
                             </div>
                             <div className="card__heading">
@@ -32,7 +32,7 @@ const SectionTours = props => (
                 <div className="col-1-of-3">
                 <div className="card">
                         <div className="card__side card__side--front">
-                            <div className="card__picture--2">
+                            <div className="card__picture card__picture--2">
                                 &nbsp;
                             </div>
                             <div className="card__heading">
@@ -50,7 +50,7 @@ const SectionTours = props => (
                 <div className="col-1-of-3">
                 <div className="card">
                         <div className="card__side card__side--front">
-                            <div className="card__picture--3">
+                            <div className="card__picture card__picture--3">
                                 &nbsp;
                             </div>
                             <div className="card__heading">
