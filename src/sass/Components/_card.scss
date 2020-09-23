@@ -2,6 +2,7 @@
 
 .card {
 
+    /* FUNCTIONALITY */
     // Perspective: must be on the parent element
     perspective: 150rem;
     -moz-perspective: 150rem; // to make this work in fire fox
@@ -41,8 +42,9 @@
                 background-image: linear-gradient((to right bottom, $color-tertiary-light, $color-tertiary-dark))
             }
         }
-    }
 
+    }
+    
     // .card:hover then .card_side { transform. .. }
     &:hover &__side--front {
         // rotate the card 180 degrees across the Y axis
@@ -52,5 +54,23 @@
     &:hover &__side--back {
         // rotate the card 180 degrees across the Y axis
         transform: rotateY(0);
+    }
+
+
+    // FRONT SIDE STYLING
+    &__picture {
+
+
+        &--1 {
+            background-image: url('../../Images/nat-5.jpg');
+        }
+
+        &--2 {
+
+        }
+
+        &--3 {
+
+        }
     }
 }

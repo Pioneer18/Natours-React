@@ -14,7 +14,15 @@ const SectionTours = props => (
                 <div className="col-1-of-3">
                     <div className="card">
                         <div className="card__side card__side--front">
-                            Tree
+                            <div className="card__picture--1">
+                                &nbsp;
+                            </div>
+                            <div className="card__heading">
+                                Heading
+                            </div>
+                            <div className="card__details">
+                                Details
+                            </div>
                         </div>
                         <div className='card__side card__side--back card__side--back-1'>
                             Trunks
@@ -24,7 +32,15 @@ const SectionTours = props => (
                 <div className="col-1-of-3">
                 <div className="card">
                         <div className="card__side card__side--front">
-                            Hello
+                            <div className="card__picture--2">
+                                &nbsp;
+                            </div>
+                            <div className="card__heading">
+                                Heading
+                            </div>
+                            <div className="card__details">
+                                Details
+                            </div>
                         </div>
                         <div className='card__side card__side--back card__side--back-2'>
                             World
@@ -34,7 +50,15 @@ const SectionTours = props => (
                 <div className="col-1-of-3">
                 <div className="card">
                         <div className="card__side card__side--front">
-                            Veggie
+                            <div className="card__picture--3">
+                                &nbsp;
+                            </div>
+                            <div className="card__heading">
+                                Heading
+                            </div>
+                            <div className="card__details">
+                                Details
+                            </div>
                         </div>
                         <div className='card__side card__side--back card__side--back-3'>
                             Pizza
