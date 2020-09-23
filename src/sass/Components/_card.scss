@@ -10,7 +10,7 @@
     height: 50rem;
 
     &__side {
-        color: $color-black;
+        color: $color-white;
         font-size: 2rem;
         height: 50rem;
         width: 100%;
@@ -79,6 +79,33 @@
         &--3 {
             background-image: $color-blue-gradient, 
             url('../../Images/nat-5.jpg');
+        }
+    }
+
+    &__heading {
+        position: absolute;
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-white;
+        top: 12rem;
+        right: 2rem;
+        text-align: right;
+
+        &-span {
+
+
+            &-1 {
+
+            }
+
+            &-2 {
+
+            }
+
+            &-3 {
+                
+            }
         }
     }
 }

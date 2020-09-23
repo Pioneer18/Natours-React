@@ -17,9 +17,11 @@ const SectionTours = props => (
                             <div className="card__picture card__picture--1">
                                 &nbsp;
                             </div>
-                            <div className="card__heading">
-                                Heading
-                            </div>
+                            <h4 className="card__heading">
+                                <div className="card__heading-span card__heading-span--1">
+                                    The Sea Explorer
+                                </div>
+                            </h4>
                             <div className="card__details">
                                 Details
                             </div>
@@ -35,9 +37,11 @@ const SectionTours = props => (
                             <div className="card__picture card__picture--2">
                                 &nbsp;
                             </div>
-                            <div className="card__heading">
-                                Heading
-                            </div>
+                            <h4 className="card__heading">
+                                <div className="card__heading-span card__heading-span--2">
+                                    Heading
+                                </div>
+                            </h4>
                             <div className="card__details">
                                 Details
                             </div>
@@ -53,9 +57,11 @@ const SectionTours = props => (
                             <div className="card__picture card__picture--3">
                                 &nbsp;
                             </div>
-                            <div className="card__heading">
-                                Heading
-                            </div>
+                            <h4 className="card__heading">
+                                <div className="card__heading-span card__heading-span--3">
+                                    Heading
+                                </div>
+                            </h4>
                             <div className="card__details">
                                 Details
                             </div>
