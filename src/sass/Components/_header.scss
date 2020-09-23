@@ -21,6 +21,7 @@
      * specify a polygon in which the element will be visible; top left then clockwise
      * polygon( x y, x y, x y, x y)
     */
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
     position: relative; /* The reference for the logo-box*/
 }
