@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
 
-const Card = props => (
-    <div className="card">
+const Card = props => {
+    const [] = useState(props);
+
+    return (<div className="card">
         {/* FRONT */}
         <div className="card__side card__side--front">
             <div className={classNames("card__picture", `card__picture--${props.cardId}`)}> {/* classnames: card_picture--1 */}
@@ -15,11 +17,11 @@ const Card = props => (
             </h4>
             <div className="card__details">
                 <ul>
-                    <li>3 day tours</li>
-                    <li>Up to 30 people</li>
-                    <li>2 tour guides</li>
-                    <li>Sleep in cozy hotels</li>
-                    <li>Difficulty: easy</li>
+                    <li>{props.list.li1}</li>
+                    <li>{props.list.li2}</li>
+                    <li>{props.list.li3}</li>
+                    <li>{props.list.li4}</li>
+                    <li>{props.list.li5}</li>
                 </ul>
             </div>
         </div>
@@ -28,11 +30,12 @@ const Card = props => (
             <div className="card__cta">
                 <div className="card__price-box">
                     <p className="card__price-only">Only</p>
-                    <p className="card__price-value">$297</p>
+                    <p className="card__price-value">{`$${props.price}`}</p>
                 </div>
                 <a href="#" className="btn btn--white">Book Now!</a>
             </div>
         </div>
     </div>);
+};
 
 export default Card;
