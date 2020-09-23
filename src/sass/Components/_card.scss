@@ -28,8 +28,8 @@
             background-color: $color-white;
         }
 
-        // the backside is already rotated 180 degrees, and when we hover it rotates back to 0
         &--back {
+            // the backside is already rotated 180 degrees, and when we hover it rotates back to 0
             transform: rotateY(180deg);
 
             &-1 {
@@ -100,6 +100,9 @@
     
     &__heading-span {
         padding: 1rem 1.5rem;
+        /* Heading text will have the exact same styling applied after line break */
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
 
         &--1 {
             background-image: linear-gradient(to right bottom,
@@ -118,5 +121,50 @@
             rgba($color-tertiary-light, .85), 
             rgba($color-tertiary-dark, .85));
         }
+    }
+
+    &__details {
+        padding: 3rem;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                color: $color-black;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
+        }
+    }
+
+    // FRONT SIDE STYLING
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    &__price-box {
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
     }
 }
