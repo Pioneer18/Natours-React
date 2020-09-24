@@ -7,4 +7,35 @@
     background-color: $color-white;
     border-radius: 3px;
     padding: 6rem;
+    padding-left: 9rem;
+    font-size: $default-font-size;
+    transform: skewX(-12deg);
+
+    /* 
+    & > * {
+        transform: skewX(12deg);
+    } 
+    */
+
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        // radius is positioned at 50% height and 50% width (a.k.a the center); radius is also %50 length of the height
+        // element has to be floated for the shape-outside property to work, and must have defined dimensions
+        // shapes how text will flow around the outside of the element
+        -webkit-shape-outside: circle(50% at 50% 50%); 
+        shape-outside: circle(50% at 50% 50%); 
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-3rem) skewX(12deg); // transform floated objects to create margin
+    }
+
+    &__img {
+        height: 100%;
+    }
+
+    &__text {
+        transform: skewX(12deg);
+    }
 }
