@@ -1,0 +1,13 @@
+@import '../abstract/variables';
+
+.section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+
+.book {
+    background-image: url(../../Images/nat-10.jpg);
+    background-size: cover; // 100% could also be used
+
+    height: 50rem;
+}
