@@ -2,6 +2,8 @@ import React from 'react';
 import img_1 from '../../../Images/nat-8.jpg';
 import img_2 from '../../../Images/nat-9.jpg';
 import Story from './Story/Story';
+import mp4 from '../../../Images/video.mp4';
+import webm from '../../../Images/video.webm';
 
 const SectionStories = props => {
 
@@ -16,6 +18,15 @@ const SectionStories = props => {
     return (
         <>
             <section className="section-stories">
+                    <div className="bg-video">
+                        <video className="bg-video__content" autoPlay muted loop>
+                            {/* use both formats so the video works across all modern browsers */}
+                            <source src={mp4} type="video/mp4"/>
+                            <source src={webm} type="video/webm"/>
+                            {/* If the browser cannot play the video, this text will render */}
+                            Your browser does not support this video feature
+                        </video>
+                    </div>
                     {/* Heading */}
                     <div className="u-center-text u-margin-bottom-large">
                         <h2 className="heading-secondary">
