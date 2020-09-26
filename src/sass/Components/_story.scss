@@ -34,6 +34,7 @@
     &__img {
         height: 100%;
         transform: translateX(-4rem); // push the image more into the middle of the figure shape
+        // backface-visibility: hidden; 
     }
 
     &__text {

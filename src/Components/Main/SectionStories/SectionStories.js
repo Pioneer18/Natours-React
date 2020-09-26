@@ -22,6 +22,7 @@ const SectionStories = props => {
                             We make people genuinely happy
                         </h2>
                     </div>
+                    {/* Story */}
                     <Story
                         caption={caption}
                         story_heading={story_heading}
@@ -34,6 +35,10 @@ const SectionStories = props => {
                         story={story_2}
                         img={img_2}
                     />
+                    {/* Button */}
+                    <div className="u-center-text u-margin-top-huge">
+                        <a href="#" className="btn btn-text"></a>
+                    </div>
             </section>
         </>
     );
