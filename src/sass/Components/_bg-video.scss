@@ -15,5 +15,6 @@
          * to the box established by it used height and width
         */
         object-fit: cover;
+        overflow: hidden; // just incase there is still some overhang from the bg-video across the section
     }
 }
