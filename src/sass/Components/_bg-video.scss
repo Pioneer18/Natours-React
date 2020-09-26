@@ -6,4 +6,14 @@
     width: 100%;
     z-index: -1;
     opacity: .15;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        /**
+         * specifies how the contents of a replaced element should be scaled relative
+         * to the box established by it used height and width
+        */
+        object-fit: cover;
+    }
 }
