@@ -7,10 +7,10 @@ const SectionComposition = props => (
     < >
         <section className="section-about">
             {/** Header */}
-            <div className="u-center-text" style={{ marginBottom: props.headingMargin }}>
+            <div className="u-center-text u-margin-top-large" style={{ marginBottom: props.headingMargin }}>
                 <h2 className="heading-secondary">
                     Exciting tours for adventurous people
-                    </h2>
+                </h2>
             </div>
             {/** Row (props: text for column 1, srcs for images in column 2) */}
             <div className="row">
