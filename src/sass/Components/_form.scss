@@ -1,0 +1,57 @@
+@import '../abstract/variables';
+
+.form {
+
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem 2rem; // giving elements a bit extra side padding helps with aesthetics
+        border-radius: 2px;
+        background-color: rgba($color-white, .5);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 100%;
+        display: block;
+        
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-primary;
+
+            &:invalid {
+                border-bottom: 3px solid $color-secondary-dark;
+            }
+        }
+
+        &::-webkit-input-placeholder {
+            color: $input-form-placeholder;
+        }
+    }
+
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem; // to match the 2 rem of padding
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    /*
+     * The 'general sibling selector' is: ~
+     * The 'adjacent sibling selector' is : +
+     ! When using the adjacent sibling selector, the selceted element has to be after the one being styled
+     ? This style is telling the label to be hidden when the placeholder is shown (user has not enetered any text)
+     ? It will be actually hidden (removed from the page). The moment text is entered it will transition from being hidden and opacity 0
+     ? to being the above styling for label. So the label will fade into view withing .3s
+    */
+    &__input:placeholder-shown + &__label {
+        opacity: 0; // the element is on the page, and has 0 opacity
+        visibility: hidden; // the element is actually not on the page
+    }
+}
