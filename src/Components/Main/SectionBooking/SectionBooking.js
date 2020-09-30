@@ -25,6 +25,23 @@ const Booking = props => {
                                     <input type="email" className="form__input" placeholder="Email" id="email" required/>
                                     <label htmlFor="email" className="form__label">Email</label>
                                 </div>
+                                <div className="form__group">
+                                    {/* Don't forget to use the "name" attribute for the browser to consider these inputs in the same group */}
+                                    <div className="form__radio-group">
+                                        <input type="radio" className="form__radio-input" id="small" name="size"/>
+                                        <label htmlFor="small" className="form__radio-label">
+                                            <span className="form__radio-button"></span> {/* hide the <input> and style this <span> to be the radio button */}
+                                            Small tour group
+                                        </label>
+                                    </div>
+                                    <div className="form__radio-group">
+                                        <input type="radio" className="form__radio-input" id="large" name="size"/>
+                                        <label htmlFor="large" className="form__radio-label">
+                                            <span className="form__radio-button"></span> {/* hide the <input> and style this <span> to be the radio button */}
+                                            Large tour group
+                                        </label>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>

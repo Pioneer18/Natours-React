@@ -17,6 +17,7 @@
         border-bottom: 3px solid transparent;
         width: 100%;
         display: block;
+        transition: all .3s;
         
         &:focus {
             outline: none;
@@ -54,5 +55,17 @@
         opacity: 0; // the element is on the page, and has 0 opacity
         visibility: hidden; // the element is actually not on the page
         transform: translateY(-4rem);
+    }
+
+    // reduce the width of each radio button and make them inlin-block so they slide next to each other
+    // an alternative would be to use floats, floating them left within the form__group container
+    &__radio-group {
+        width: 50%;
+        display: inline-block;
+    }
+
+    &__radio-label {
+        font-size: $default-font-size;
+        cursor: pointer; // the hand symbol
     }
 }
