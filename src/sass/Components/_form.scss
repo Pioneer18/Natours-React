@@ -53,5 +53,6 @@
     &__input:placeholder-shown + &__label {
         opacity: 0; // the element is on the page, and has 0 opacity
         visibility: hidden; // the element is actually not on the page
+        transform: translateY(-4rem);
     }
 }
