@@ -17,6 +17,7 @@
         right: 6rem;
         z-index: 1010;
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        text-align: center;
     }
 
     &__background {
@@ -28,7 +29,7 @@
         right: 6.3rem;
         background-image: radial-gradient($color-primary-light, $color-primary-dark); // gradient goes from center to out in all directions
         z-index: 1000;
-        transition: all .6s cubic-bezier(.36,-0.06,0,.91); // easeOutQuart
+        transition: all .6s cubic-bezier(0.83, 0, 0.17, 1); // easeOutQuart
 
         // transform: scale(100); // make the background grow to cover the page
     }
@@ -87,6 +88,8 @@
 
     }
 
+    // FUNCTIONALITY
+
     &__checkbox:checked ~ &__background {
         transform: scale(100);
     }
@@ -94,5 +97,30 @@
     &__checkbox:checked ~ &__nav {
         opacity: 1;
         width: 100%;
+    }
+
+    // ICON
+    &__icon {
+        position: relative;
+        margin-top: 3.5rem;
+
+        &,
+        &:before,
+        &:after {
+            width: 3rem;
+            height: 2px;
+            background-color: $color-footer;
+            display: inline-block;
+        }
+        
+        &:before,
+        &:after {
+            content: ""; // so that the before and after elements to be shown
+            position: absolute;
+            left: 0;
+        }
+
+        &:before { top: -1rem; }
+        &:after { top: 1rem; }
     }
 }

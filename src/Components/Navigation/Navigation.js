@@ -7,7 +7,9 @@ const Navigation = props => {
             <input type="checkbox" className="navigation__checkbox" id="navi-toggle"/>
             
             {/* This is a round button for opening and closing the Navigation */}
-            <label htmlFor="navi-toggle" className="navigation__button"></label>
+            <label htmlFor="navi-toggle" className="navigation__button">
+                <span className="navigation__icon">&nbsp;</span>
+            </label>
             
             {/* This background is displayed when the Navigation is opened */}
             <div className="navigation__background">&nbsp;</div> {/* &nbsp; is to indicate 'white space' or 'empty' */}
