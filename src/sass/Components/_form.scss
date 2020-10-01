@@ -60,7 +60,8 @@
     // reduce the width of each radio button and make them inlin-block so they slide next to each other
     // an alternative would be to use floats, floating them left within the form__group container
     &__radio-group {
-        width: 50%;
+        margin-left: 4rem;
+        width: 40%;
         display: inline-block;
         // float: left;
     }
@@ -78,7 +79,7 @@
         border-radius: 50%; // circle
         display: inline-block; // must be inline-block so it can enforce it's dimensions
         position: absolute;
-        left: -3rem;
+        left: -3.7rem;
         top: -.7rem;
 
         &::after {
@@ -102,7 +103,8 @@
     }
 
     &__radio-input {
-        visibility: hidden;
+        display: none;
+        // "visibility: hidden" will hide the element, but still take up space
     }
 
 }

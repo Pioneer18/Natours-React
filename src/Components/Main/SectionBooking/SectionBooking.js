@@ -42,6 +42,11 @@ const Booking = props => {
                                         </label>
                                     </div>
                                 </div>
+                                <div className="form__group">
+                                    <div className="u-margin-top-medium">
+                                        <button className="btn btn--green">Next Step &rarr;</button>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>

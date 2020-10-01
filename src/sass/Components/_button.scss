@@ -12,6 +12,7 @@
 
 .btn {
     // btn as an unclicked link and as a visited link
+    &, // for the <button> element, which has no link or visted pseudo elements
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -22,6 +23,10 @@
         transition: all .2s;
         position: relative;
         font-size: 1.5rem;
+
+        // styles for the <button> element
+        border: none;
+        cursor: pointer;
     }
 
     &:hover {
@@ -35,8 +40,11 @@
         }
     }
 
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-.1rem); // make the button go down a bit on a click (active)
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
     }
 
     &--white {
