@@ -20,15 +20,15 @@
     }
 
     &__background {
-        height: 6.5rem;
-        width: 6.5rem;
+        height: 6.3rem;
+        width: 6.3rem;
         border-radius: 50%;
         position: fixed;
-        top: 6.5rem;
-        right: 6.5rem;
+        top: 6.3rem;
+        right: 6.3rem;
         background-image: radial-gradient($color-primary-light, $color-primary-dark); // gradient goes from center to out in all directions
         z-index: 1000;
-        transition: all .6s cubic-bezier(0.83, 0, 0.17, 1); // easeInOutQuint
+        transition: all .6s cubic-bezier(.36,-0.06,0,.91); // easeOutQuart
 
         // transform: scale(100); // make the background grow to cover the page
     }
@@ -42,7 +42,7 @@
         
         opacity: 0;
         width: 0; // completely hides the links
-        transition: all .5s;
+        transition: all .5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     }
 
     &__list {
