@@ -68,5 +68,41 @@
     &__radio-label {
         font-size: $default-font-size;
         cursor: pointer; // the hand symbol
+        position: relative;
     }
+
+    &__radio-button {
+        height: 3rem;
+        width: 3rem;
+        border: 5px solid $color-primary;
+        border-radius: 50%; // circle
+        display: inline-block; // must be inline-block so it can enforce it's dimensions
+        position: absolute;
+        left: -3rem;
+        top: -.7rem;
+
+        &::after {
+            content: ""; // ! remember to use the "content" property when using a ::pseudo element
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            border-radius: 50%;
+            position: absolute; // it's ok that the parent element has an absolute position; it just must not be "position: static", the default
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $color-primary;
+            opacity: 0;
+            transition: opacity .2s;
+        }
+    }
+
+    &__radio-input:checked ~ &__radio-label &__radio-button::after {
+        opacity: 1;
+    }
+
+    &__radio-input {
+        visibility: hidden;
+    }
+
 }
