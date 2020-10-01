@@ -8,9 +8,10 @@ import './sass/App.scss';
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Main headingMargin={'8rem'}></Main>
-      <Footer></Footer>
+      <Navigation />
+      <Header />
+      <Main headingMargin={'8rem'} />
+      <Footer />
     </div>
   );
 }
