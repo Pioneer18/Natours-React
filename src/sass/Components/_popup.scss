@@ -1,0 +1,68 @@
+@import '../abstract/variables';
+@import '../abstract/mixins';
+
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-black, .93);
+    z-index: 5000;
+    
+    // acts as a table with 2 cells, each with the same height yet different widths
+    &__content {
+        @include center;
+        width: 75%;
+        // height is defined by the conent
+        background-color: $color-white;
+        box-shadow: 0 2rem 4rem rgba($color-black, .2);
+        border-radius: 3px;
+        display: table;
+        overflow: hidden;
+    }
+
+    // left table cell
+    &__left {
+        width: 33.3333333%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    // right table cell
+    &__right {
+        width: 66.6666667%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+    }
+
+    &__img {
+        // block will remain in its parent container
+        // the height will auto be determined by available space
+        display: block;
+        width: 100%;
+
+        &#last-img {
+            margin-bottom: -2px;
+        }
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+
+        column-count: 2; // ? VERY USEFUL 
+        column-gap: 4rem;
+        column-rule: 1px solid $color-grey-light-2;
+        
+        -moz-column-count: 2; // ? VERY USEFUL 
+        -moz-column-gap: 4rem;
+        -moz-column-rule: 1px solid $color-grey-light-2;
+
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto; // will automatically hyphenate text
+    }
+}
