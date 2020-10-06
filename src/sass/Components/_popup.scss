@@ -9,6 +9,8 @@
     left: 0;
     background-color: rgba($color-black, .93);
     z-index: 5000;
+
+    display: none;
     
     // acts as a table with 2 cells, each with the same height yet different widths
     &__content {
