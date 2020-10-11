@@ -26,7 +26,7 @@ const listThree = {
 const SectionTours = props => (
     <  >
         {/** Header */}
-        <section className="section-tours">
+        <section className="section-tours" id="section-tours">
             <div className="u-center-text" style={{ marginBottom: props.headingMargin }}>
                 <h2 className="heading-secondary">
                     Most Popular Tours
