@@ -32,7 +32,7 @@ const Card = props => {
                     <p className="card__price-only">Only</p>
                     <p className="card__price-value">{`$${props.price}`}</p>
                 </div>
-                <a href="#" className="btn btn--white">Book Now!</a>
+                <a href="#popup" className="btn btn--white">Book Now!</a>
             </div>
         </div>
     </div>);
