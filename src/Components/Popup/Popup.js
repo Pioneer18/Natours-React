@@ -5,7 +5,7 @@ import img2 from '../../Images/nat-9.jpg';
 const Popup = props => {
     
     return(
-        <div className="popup">
+        <div className="popup" id="popup">
             <div className="popup__content">
                 <div className="popup__left">
                     <img src={img1} alt="Tour photo" className="popup__img"/>
@@ -13,6 +13,7 @@ const Popup = props => {
                 </div>
                 <div className="popup__right">
                     <div className="u-margin-bottom-small">
+                        <a href="#section-tours" className="popup__close">&times;</a>
                         <h2 className="heading-secondary">Start booking now</h2>
                     </div>
                     <div className="u-margin-bottom-small">
