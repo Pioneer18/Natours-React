@@ -14,11 +14,42 @@
   * use percentage because it enables the user to still adjust the font-size in the browser 
  */
  html {
-   font-size: 62.5%;
+   font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
 
-   @include respond-phone {
+   // larger media queries always come before the smaller ones
+
+   /*
+   - 1 rem = 12px; 12/16 = 75%'
+   - if greater than 1800px
+   */
+   @include respond(big-desktop) {
+     font-size: 75%;
+   }
+
+   /*
+   - 1 rem = 9px; 9/16 = 56.25%
+   - if < 1200px
+   */
+   @include respond(tab-land) {
+     font-size: 56.25%;
+   }
+
+   /*
+   - 1 rem = 8px; 8/16 = 50%
+   - if less than 900px
+   */
+   @include respond(tab-port) {
      font-size: 50%;
    }
+
+   /*
+   - 1 rem = ....
+   - if less than 600px
+   */
+   @include respond(phone) {
+     font-size: 45%;
+   }
+
  }
 
  /* body element contains the entire webpage */
