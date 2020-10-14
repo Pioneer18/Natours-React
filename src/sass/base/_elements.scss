@@ -16,7 +16,10 @@
  html {
    font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
 
-   // larger media queries always come before the smaller ones
+   // larger media queries always come before the smaller ones with Desktop first (max-width)
+   // Smaller media queries always come before the larger ones with mobile first (min-width)
+
+   // ORDER OF MEDIA QUERY PRIORITIES: Base + typography > general layout + grid > page layout > components
 
    /*
    - 1 rem = 12px; 12/16 = 75%'
