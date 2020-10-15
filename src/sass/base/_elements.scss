@@ -58,7 +58,6 @@
  /* body element contains the entire webpage */
 body {
     margin: 0;
-    padding: 3rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Lato', 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
@@ -71,6 +70,10 @@ body {
     padding: 3rem; /* this should not be in pixels*/
     /* width and height will account for any border or padding; makes dealing with sizing much simpler*/
     box-sizing: border-box;
+
+    @include respond(tab-port) {
+      padding: 0; 
+    }
   }
   
   code {
