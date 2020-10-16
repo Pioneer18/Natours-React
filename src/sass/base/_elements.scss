@@ -19,8 +19,6 @@
    // larger media queries always come before the smaller ones with Desktop first (max-width)
    // Smaller media queries always come before the larger ones with mobile first (min-width)
 
-   // ORDER OF MEDIA QUERY PRIORITIES: Base + typography > general layout + grid > page layout > components
-
    /*
    - 1 rem = 12px; 12/16 = 75%'
    - if greater than 1800px

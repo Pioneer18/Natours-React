@@ -31,6 +31,9 @@ $breakpoint
 
 1em = 16px
 mixins font size will always be based on the browser default, or user selected font size
+
+? ORDER OF MEDIA QUERY PRIORITIES: Base + typography > general layout + grid > page layout > components
+
 */
 @mixin respond($breakpoint) {
     @if $breakpoint == small-phone {
@@ -51,9 +54,9 @@ mixins font size will always be based on the browser default, or user selected f
     @if $breakpoint == tab-land {
         @media (max-width: 75em) { @content }; // 1200px
     }
-    @if $breakpoint = tab-land-big {
-        @media (max-width: 84.37) { @content }; // 1350px
-     };
+    @if $breakpoint == tab-land-big {
+        @media (max-width: 84.37em) { @content }; // 1350px
+    }
     @if $breakpoint == big-desktop {
         @media (min-width: 112.5em) { @content };  // 1800px
     }
@@ -61,7 +64,7 @@ mixins font size will always be based on the browser default, or user selected f
 
 @mixin responsive-heading-secondary {
     @include respond (big-desktop) {
-        font-size: 3.8rem;
+        font-size: 4.1rem;
     }
     @include respond (tab-land-big) {
         font-size: 3.5rem;
@@ -84,4 +87,53 @@ mixins font size will always be based on the browser default, or user selected f
     @include respond (small-phone) {
         font-size: 1.4rem;
     }
+
+}
+
+@mixin responsive-heading-primary-sub {
+    @include respond (big-desktop) {
+        letter-spacing: 2.9rem;
+        }
+        @include respond (tab-land-big) {
+        letter-spacing: 1.8rem;
+        }
+        @include respond (tab-land) {
+        letter-spacing: 1.7rem;
+        }
+        @include respond (tab-land-small) {
+        letter-spacing: 1.5rem;
+        }
+        @include respond (tab-port) {
+        letter-spacing: 1.4rem;
+        }
+        @include respond (large-phone) {
+        letter-spacing: 1.25rem;
+        }
+        @include respond(phone) {
+        letter-spacing: 1.1rem;
+        }
+}
+
+@mixin responsive-heading-primary-main {
+    @include respond (big-desktop) {
+        letter-spacing: 3.6rem;
+     }
+     @include respond (tab-land-big) {
+        letter-spacing: 3rem;
+     }
+     @include respond (tab-land) {
+        letter-spacing: 2.7rem;
+     }
+     @include respond (tab-land-small) {
+        letter-spacing: 2.4rem;
+     }
+     @include respond (tab-port) {
+        letter-spacing: 2.1rem;
+     }
+     @include respond (large-phone) {
+        letter-spacing: 1.8rem;
+     }
+     @include respond(phone) {
+        letter-spacing: 1.5rem;
+     }
 }
