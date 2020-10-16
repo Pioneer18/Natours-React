@@ -95,7 +95,7 @@ mixins font size will always be based on the browser default, or user selected f
 
 @mixin responsive-heading-primary-sub {
     @include respond (big-desktop) {
-        letter-spacing: 2.9rem;
+        letter-spacing: 2.2rem;
     }
     @include respond (tab-land-big) {
     letter-spacing: 1.8rem;
