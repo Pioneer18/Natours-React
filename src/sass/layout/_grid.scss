@@ -1,3 +1,7 @@
+/*
+? Grid System swithces from columns to stacked rows at 1100px
+? Rows have a small margin bottom as well as each column
+*/
 @import '../abstract/variables';
 @import '../abstract/mixins';
 
@@ -8,6 +12,10 @@
     // apply the margin-bottom to all of the rows except the last
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+
+        @include respond (columns-break) {
+            margin-bottom: $gutter-vertical-small;
+        }
 
     }
 
@@ -24,6 +32,7 @@
             @include respond (columns-break) {
                 width: 100% !important;
                 margin-right: 0 !important;
+                margin-bottom: $gutter-vertical-small;
             }
         }
 
