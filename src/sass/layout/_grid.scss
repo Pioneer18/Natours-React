@@ -19,6 +19,10 @@
 
     }
 
+    @include respond (columns-break) {
+        max-width: 60%;
+    }
+
     // clearfix to make row retain its hight despite floated columns
     @include clearfix;
 
