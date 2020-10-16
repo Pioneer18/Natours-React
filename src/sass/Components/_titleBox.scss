@@ -6,6 +6,7 @@
 */
 
 @import '../abstract/variables';
+@import '../abstract/mixins';
 @import '../base/keyframes';
 
 .header__title-box {
@@ -33,6 +34,11 @@
       animation-name: moveInLeft;
       animation-duration: 1.5s;
       animation-timing-function: ease-out; /* the animation will start fast and then slow down*/
+      @include respond(phone) {
+         letter-spacing: 1rem;
+         font-family: 5rem;
+      }
+   
    }
 
    &--sub {
@@ -40,6 +46,9 @@
       font-size: 1.5rem;
       font-weight: 700;
       letter-spacing: 1.95rem;
+      @include respond(phone) {
+         letter-spacing: .5rem;
+      }
 
       animation: moveInRight 1.5s ease-out;
    }
