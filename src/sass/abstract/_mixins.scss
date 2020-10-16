@@ -51,6 +51,9 @@ mixins font size will always be based on the browser default, or user selected f
     @if $breakpoint == tab-land-small {
         @media (max-width: 65.62em) { @content }; // 1050px
     }
+    @if $breakpoint == columns-break {
+        @media (max-width: 68.75em) { @content }; // 1100px - for smooth transition to rows from columns
+    }
     @if $breakpoint == tab-land {
         @media (max-width: 75em) { @content }; // 1200px
     }
