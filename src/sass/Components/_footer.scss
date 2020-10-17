@@ -14,6 +14,9 @@
     &__logo-box {
         text-align: center; // this works because <img> is inline
         margin-bottom: 8rem;
+        @include respond (columns-break) {
+            margin-bottom: 6rem;
+        }
     }
 
     &__logo {
