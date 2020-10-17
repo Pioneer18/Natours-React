@@ -5,6 +5,7 @@
 * the background is clipped into a polygon shape with clip-path
 */
 @import '../abstract/variables';
+@import '../abstract/mixins';
 
 
 .header {
@@ -24,4 +25,22 @@
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
     position: relative; /* The reference for the logo-box*/
+
+
+    @include respond (small-desktop) {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 85%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 92%);
+    }
+    @include respond (tab-land-big) {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 85%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 89%);
+    }
+    @include respond (tab-land) {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 85%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 87%);
+    }
+    @include respond (tab-port) {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 85%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 85%);
+    }
 }

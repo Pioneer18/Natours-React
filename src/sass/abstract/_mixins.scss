@@ -60,6 +60,9 @@ mixins font size will always be based on the browser default, or user selected f
     @if $breakpoint == tab-land-big {
         @media (max-width: 84.37em) { @content }; // 1350px
     }
+    @if $breakpoint == small-desktop {
+        @media (max-width: 98.43em) { @content }; // 1575px
+    }
     @if $breakpoint == big-desktop {
         @media (min-width: 112.5em) { @content };  // 1800px
     }
