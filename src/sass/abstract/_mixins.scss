@@ -36,6 +36,9 @@ mixins font size will always be based on the browser default, or user selected f
 
 */
 @mixin respond($breakpoint) {
+    @if $breakpoint == smaller-phone {
+        @media (max-width: 21.87em) { @content }; // 350px
+    }
     @if $breakpoint == small-phone {
         @media (max-width: 26.87em) { @content }; // 430px
     }
@@ -121,6 +124,12 @@ mixins font size will always be based on the browser default, or user selected f
     @include respond(phone) {
     letter-spacing: 1.1rem;
     }
+    @include respond(small-phone) {
+        letter-spacing: 1rem;
+     }
+     @include respond(smaller-phone) {
+        letter-spacing: .9rem;
+     }
 }
 
 @mixin responsive-heading-primary-main {
@@ -144,6 +153,12 @@ mixins font size will always be based on the browser default, or user selected f
      }
      @include respond(phone) {
         letter-spacing: 1.5rem;
+     }
+     @include respond(small-phone) {
+        letter-spacing: 1.3rem;
+     }
+     @include respond(smaller-phone) {
+        letter-spacing: 1rem;
      }
 }
 
