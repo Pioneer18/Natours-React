@@ -7,7 +7,7 @@ const SectionComposition = props => (
     < >
         <section className="section-about">
             {/** Header */}
-            <div className="u-center-text u-margin-top-large" style={{ marginBottom: props.headingMargin }}>
+            <div className="u-center-text u-margin-top-large u-margin-bottom-large" style={{ marginBottom: props.headingMargin }}>
                 <h2 className="heading-secondary">
                     Exciting tours for adventurous people
                 </h2>
