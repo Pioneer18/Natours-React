@@ -20,7 +20,7 @@
         transform: skewY(7deg)
     }
     
-    @include respond (tab-port) {
-        padding: 15rem 0;
+    @include respond (columns-break) {
+        padding: 10rem 0;
     }
 }
