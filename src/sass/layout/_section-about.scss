@@ -1,6 +1,10 @@
 @import '../abstract/variables';
+@import '../abstract/mixins';
 .section-about {
     background-color: $color-grey-light-1;
     padding: 25rem 0;
     margin-top: -27rem; // negative margin to move a section up
+    @include respond (tab-port) {
+        padding: 15rem 0 20rem;
+    }
 }
