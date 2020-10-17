@@ -11,11 +11,19 @@
     font-size: $default-font-size;
     transform: skewX(-12deg);
     position: relative;
-    /* 
-    & > * {
-        transform: skewX(12deg);
-    } 
-    */
+   
+    @include respond (columns-break) {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+
+    @include respond (phone) {
+        transform: skew(0);
+        padding: 2rem;
+        padding-left: 5rem;
+        width: 90%;
+    }
 
     &__shape {
         width: 15rem;
@@ -29,6 +37,9 @@
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg); // transform floated objects to create margin
+        @include respond (phone) {
+            transform: translateX(-3rem) skewX(0);
+        }
     }
 
     &__img {
@@ -39,6 +50,9 @@
 
     &__text {
         transform: skewX(12deg);
+        @include respond (phone) {
+            transform: skew(0);
+        }
     }
 
     &__caption {
