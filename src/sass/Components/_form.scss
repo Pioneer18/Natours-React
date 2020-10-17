@@ -63,7 +63,12 @@
         margin-left: 4rem;
         width: 40%;
         display: inline-block;
-        // float: left;
+        @include respond (columns-break) {
+            margin-bottom: 1rem;
+        }
+        @include respond (tab-port) {
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__radio-label {
