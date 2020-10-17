@@ -63,6 +63,9 @@ mixins font size will always be based on the browser default, or user selected f
     @if $breakpoint == small-desktop {
         @media (max-width: 98.43em) { @content }; // 1575px
     }
+    @if $breakpoint == desktop {
+        @media (max-width: 112.43em) { @content }; // 1799
+    }
     @if $breakpoint == big-desktop {
         @media (min-width: 112.5em) { @content };  // 1800px
     }
@@ -142,4 +145,31 @@ mixins font size will always be based on the browser default, or user selected f
      @include respond(phone) {
         letter-spacing: 1.5rem;
      }
+}
+
+@mixin responsive-header {
+    @include respond (big-desktop) {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 85%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 95%);
+    }
+    @include respond (desktop) {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 85%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 92%);
+    }
+    @include respond (tab-land-big) {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 85%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 89%);
+    }
+    @include respond (tab-land) {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 85%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 87%);
+    }
+    @include respond (tab-port) {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 85%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 85%);
+    }
+    @include respond (phone) {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 85%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 83%);
+    }
 }
