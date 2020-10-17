@@ -27,7 +27,7 @@ const SectionTours = props => (
     <  >
         {/** Header */}
         <section className="section-tours" id="section-tours">
-            <div className="u-center-text" style={{ marginBottom: props.headingMargin }}>
+            <div className="u-center-text u-margin-bottom-large">
                 <h2 className="heading-secondary">
                     Most Popular Tours
                 </h2>
