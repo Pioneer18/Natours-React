@@ -1,10 +1,16 @@
 @import '../abstract/variables';
+@import '../abstract/mixins';
 
 .footer {
     background-color: $color-footer;
     padding: 10rem 0;
     font-size: 1.4rem;
     color: $color-grey-light-1;
+
+    @include respond (columns-break) {
+        padding: 8rem 0;
+    }
+
     &__logo-box {
         text-align: center; // this works because <img> is inline
         margin-bottom: 8rem;
@@ -19,6 +25,11 @@
         border-top: 1px solid $button-text;
         padding-top: 2rem;
         display: inline-block;
+
+        @include respond (columns-break) {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__list {
@@ -59,5 +70,11 @@
         // for more symetrical spacing
         width: 80%;
         float: right;
+
+        @include respond (columns-break) {
+            width: 100%;
+            text-align: center;
+            float: none;
+        }
     }
 }
