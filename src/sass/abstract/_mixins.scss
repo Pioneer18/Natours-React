@@ -74,6 +74,12 @@ mixins font size will always be based on the browser default, or user selected f
     }
 }
 
+@mixin height-respond($breakpoint) {
+    @if $breakpoint == ipad-pro {
+        @media (min-height: 76.25em) and (max-width: 75em) { @content }; //
+    }
+}
+
 @mixin responsive-heading-secondary {
     @include respond (big-desktop) {
         font-size: 4.1rem;
