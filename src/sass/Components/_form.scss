@@ -65,9 +65,14 @@
         display: inline-block;
         @include respond (columns-break) {
             margin-bottom: 1rem;
+            width: auto;
+            margin-right: .8rem
         }
         @include respond (tab-port) {
             margin-bottom: 1.5rem;
+        }
+        @include respond (iphone-break) {
+            width: auto;   
         }
     }
 
