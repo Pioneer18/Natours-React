@@ -173,15 +173,20 @@
     @include respond (columns-break) {
        
         height: auto;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: $light-card-shadow; 
 
         &__side {
             height: auto;
             position: relative;
             border-radius: 3px;
+            box-shadow: none;
    
             &--back {
                 // the backside is already rotated 180 degrees, and when we hover it rotates back to 0
                 transform: rotateY(0);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
             }
 
         }
@@ -199,6 +204,7 @@
             left: 0;
             transform: translate(0);
             width: 100%;
+            padding: 7rem 4rem 4rem;
         }
 
         &__price-box {
