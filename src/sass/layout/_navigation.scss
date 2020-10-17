@@ -19,6 +19,13 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
+
+        @include respond (tab-port) {
+            top: 3rem;
+        }
+        @include respond (phone) {
+            top: 3.5rem;
+        }
     }
 
     &__background {
@@ -31,6 +38,12 @@
         background-image: radial-gradient($color-primary-light, $color-primary-dark); // gradient goes from center to out in all directions
         z-index: 1000;
         transition: all .6s cubic-bezier(0.83, 0, 0.17, 1); // easeOutQuart
+        @include respond (tab-port) {
+            top: 3.5rem;
+        }
+        @include respond (phone) {
+            top: 4rem;
+        }
 
         // transform: scale(100); // make the background grow to cover the page
     }
