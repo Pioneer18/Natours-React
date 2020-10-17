@@ -41,5 +41,8 @@
   },
   "devDependencies": {
     "node-sass": "^4.14.1"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
