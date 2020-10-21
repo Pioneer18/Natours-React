@@ -106,7 +106,7 @@
     @include respond (tab-land-big) {
         &__content {
             display: relative;
-            width: 45%;
+            width: 55%;
         }
 
         &__left {
@@ -124,6 +124,24 @@
             &#last-img {
                 display: none;
             }
+        }
+    }
+
+    @include respond (tab-port) {
+        &__content {
+            width: 65%;
+        }
+    }
+
+    @include respond (phone) { 
+        &__text {
+            column-count: 1; // ? VERY USEFUL 
+            column-rule: 1px solid $color-grey-light-2;
+            -moz-column-count: 1; // ? VERY USEFUL 
+            -moz-hyphens: auto;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto; // will automatically hyphenate text
         }
     }
 }
