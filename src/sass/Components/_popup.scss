@@ -102,4 +102,28 @@
             color: $color-primary;
         }
     }
+
+    @include respond (tab-land-big) {
+        &__content {
+            display: relative;
+            width: 45%;
+        }
+
+        &__left {
+            float: left;
+            width: 100%;
+        }
+
+        &__right {
+            float: left;
+            width: 100%;
+        }
+
+        &__img {
+
+            &#last-img {
+                display: none;
+            }
+        }
+    }
 }
