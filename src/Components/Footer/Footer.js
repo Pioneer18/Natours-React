@@ -1,12 +1,14 @@
 import React from 'react';
-import logo from '../../Images/logo-green-2x.png'
+import logo from '../../Images/logo-green-2x.png';
+import low_res_logo from '../../Images/logo-green-1x.png';
 
 const Footer = props => {
 
     return (
         <footer className="footer">
             <div className="footer__logo-box">
-                <img src={logo} alt="Full Logo" className="footer__logo"/>
+                {/* Low / High Res Density Responsive Image */}
+                <img srcSet={`${logo} 2x, ${low_res_logo} 1x`} alt="Full Logo" className="footer__logo"/>
             </div>
             <div className="row">
                 <div className="col-1-of-2">
