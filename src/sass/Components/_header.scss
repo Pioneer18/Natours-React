@@ -26,11 +26,11 @@
     clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
     position: relative; /* The reference for the logo-box*/
 
-    @media (min-resolution: 192dpi) {
+    @media (min-resolution: 192dpi) and (min-width: 600px) {
         background-image: linear-gradient(
         to right bottom, 
-        rgba($color-primary-light, 0.8), 
-        rgba($color-primary-dark, 0.8)),
+        rgba($color-secondary-light, 0.8), 
+        rgba($color-secondary-dark, 0.8)),
         url('../../Images/hero.jpg');
     }
 
