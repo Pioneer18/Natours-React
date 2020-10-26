@@ -14,7 +14,7 @@
         to right bottom, 
         rgba($color-primary-light, 0.8), 
         rgba($color-primary-dark, 0.8)),
-        url('../../Images/hero.jpg');
+        url('../../Images/hero-small.jpg');
     background-size: cover; /* will always try to fit the viewport or element selected to cover*/
     background-position: top;
 
@@ -26,11 +26,12 @@
     clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
     position: relative; /* The reference for the logo-box*/
 
-    @media (min-resolution: 192dpi) and (min-width: 600px) {
+    @media (min-resolution: 192dpi) and (min-width: 600px),
+           (min-width: 2000px) {
         background-image: linear-gradient(
         to right bottom, 
-        rgba($color-secondary-light, 0.8), 
-        rgba($color-secondary-dark, 0.8)),
+        rgba($color-primary-light, 0.8), 
+        rgba($color-primary-dark, 0.8)),
         url('../../Images/hero.jpg');
     }
 
