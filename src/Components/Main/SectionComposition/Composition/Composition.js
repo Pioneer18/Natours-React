@@ -12,19 +12,19 @@ const Composition = props => (
         <div className="composition">
 
             <img srcSet={`${imgNat1} 300w, ${imgNat1_large} 1000w`} 
-                 sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 18.75em"
                  alt="Photo 1"
                  className="composition__photo composition__photo--p1"
                  src={imgNat1_large}/>
 
             <img srcSet={`${imgNat2} 300w, ${imgNat2_large} 1000w`} 
-                 sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 18.75em"
                  alt="Photo 2"
                  className="composition__photo composition__photo--p2"
                  src={imgNat2_large}/>
 
             <img srcSet={`${imgNat3} 300w, ${imgNat3_large} 1000w`} 
-                 sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 18.75em"
                  alt="Photo 3"
                  className="composition__photo composition__photo--p3"
                  src={imgNat3_large}/>
