@@ -11,12 +11,13 @@ const Footer = props => {
             <div className="footer__logo-box">
                 <picture className="footer__logo">
                     <source 
-                        srcSet={`${phone_res_logo_1} 1x`} 
-                        media="max-width: 37.5em">
+                        srcSet={`${phone_res_logo_1} 1x, ${phone_res_logo_2} 2x`} 
+                        media="(max-width: 37.5em)">
                     </source>
                     <img 
-                        srcSet={`${logo} 2x`}
+                        srcSet={`${low_res_logo} 1x, ${logo} 2x`}
                         alt="Full logo"
+                        src={low_res_logo}
                     >
                     </img>
                 </picture>
