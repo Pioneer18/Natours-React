@@ -17,7 +17,7 @@ const Footer = props => {
                     <img 
                         srcSet={`${low_res_logo} 1x, ${logo} 2x`}
                         alt="Full logo"
-                        src={low_res_logo}
+                        src={logo}
                     >
                     </img>
                 </picture>
